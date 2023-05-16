@@ -1,0 +1,21 @@
+{
+  "name": "blabs-k8s-workshop",
+  "version": "1.0.0",
+  "description": "kubernetes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blabs-apoorv-bansal-042/blabs-k8s-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blabs-apoorv-bansal-042/blabs-k8s-workshop/issues"
+  },
+  "homepage": "https://github.com/blabs-apoorv-bansal-042/blabs-k8s-workshop#readme"
+}
