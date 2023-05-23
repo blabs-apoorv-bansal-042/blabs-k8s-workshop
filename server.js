@@ -7,8 +7,8 @@ const server = http.createServer(function (req, res) {
     res.write("This is home Page");
     res.end();
   } else if (req.url == "/health") {
-    res.writeHead(200,  { "Content-Type": "text/html" });
-    res.write("Health");
+    res.writeHead(204);
+    res.write("");
     res.end();
   } else if (req.url == "/ping") {
     console.log("In ping")
