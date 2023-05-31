@@ -13,8 +13,14 @@ spec:
         app: k8s-workshop
     spec:
       containers:
-      - name: k8s-workshop
-        imagePullPolicy: Never
-        image: k8sworkshop:latest
-        ports:
-        - containerPort: 8081
+        - name: k8s-workshop
+          imagePullPolicy: Never
+          image: k8s-workshop-health:latest
+          ports:
+            - containerPort: 3000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 3
+            periodSeconds: 3

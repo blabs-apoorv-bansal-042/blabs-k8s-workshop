@@ -7,8 +7,8 @@ const server = http.createServer(function (req, res) {
     res.write("This is home Page");
     res.end();
   } else if (req.url == "/health") {
-    res.writeHead(204);
-    res.write("");
+    res.writeHead(401);
+    res.write("unauthorised");
     res.end();
   } else if (req.url == "/ping") {
     console.log("In ping")
@@ -23,3 +23,6 @@ server.listen(port, function () {
   const { address } = server.address();
   console.log(`App listening at http://${address}:${port}`);
 });
+
+// kub8-image
+// k8s-workshop-health

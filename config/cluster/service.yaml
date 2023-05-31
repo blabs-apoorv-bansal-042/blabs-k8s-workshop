@@ -8,5 +8,5 @@ spec:
     app: k8s-workshop
   ports:
   - protocol: TCP
-    port: 8081
-    targetPort: 8081
+    port: 3000
+    targetPort: 3000
